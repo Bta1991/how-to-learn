@@ -7,7 +7,7 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: "Helvetica Neue", Arial, sans-serif;
-} 
+}
 
 .header {
   margin: 0;
@@ -117,13 +117,10 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
-}
-
-.two-columns__paragraph:first-child {
   margin-bottom: 30px;
 }
+
 .two-columns__paragraph:last-child {
-  margin-top: 30px;
   margin-bottom: 0;
 }
 
@@ -313,6 +310,7 @@
   font-weight: 700;
 }
 .footer__column-links {
+  margin: 0;
   list-style: none;
   margin-top: 20px;
   padding: 0;
