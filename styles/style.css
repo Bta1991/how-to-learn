@@ -9,6 +9,29 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
+/* стиль для гиперссылок */
+a:hover {
+ opacity: 40%;
+ transition: 0.3s;
+}
+a {
+  transition: 1s;
+}
+
+/* вращение */
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+.rotation {
+  animation: rotation 20s infinite linear ;
+}
+
+
 .header {
   margin: 0;
   height: 100vh;
@@ -18,6 +41,7 @@
   /* выше установили ограничения для секции */
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 
 .logo {
@@ -73,7 +97,6 @@
   z-index: 2;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   position: absolute;
   right: 0;
@@ -82,6 +105,7 @@
   width: 568px;
   background-color: #2f80ed;
   z-index: 1;
+  object-fit: fill;
 }
 /*секция 1*/
 .description {
@@ -128,7 +152,7 @@
   font-weight: 600;
 }
 
- /* секция techniques */
+ /* секция Техники обучения */
 .techniques {
   margin: 0 auto;
   display: flex;
@@ -139,6 +163,7 @@
 }
 
 .cards {
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   width: 920px;
@@ -156,19 +181,21 @@
 
 .cards__image {
   margin: 0;
-  margin: 60px 40px 43px 40px;
+  margin: 0px 40px 43px 40px;
   border-radius: 50%;
   width: 160px;
   height: 160px;
 }
 
 .cards__title {
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
 }
 
 .cards__description {
+  margin: 0;
   margin-top: 16px;
   line-height: 23px;
   font-size: 18px;
@@ -366,11 +393,91 @@ margin-right: 20px;
   justify-content: center;
   flex-direction: column;
   padding-top: 105px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #f2f2f2;
 }
+.khan__container {
+  margin: 0;
+  width: 80%;
+  margin: 0 auto;
+}
+.khan__author {
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: 400;
+}
+.khan__title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+.khan__quote{
+  width: 790px;
+  margin-top: 50px;
+  margin-bottom: 36px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.khan__quote-author{
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+.khan__quote-author-subline{
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 400;
+}
+.book-container {
+  margin: 0;
+  margin-top: 68px;
+  display: flex;
+  flex-direction: row;
+}
+.khan__book-pic {
+  margin: 0;
+  height: 620px;
+  width: 608px;
+  object-fit: cover;
+  object-position: top;
+
+}
+.khan__buy-link{
+  margin: 0;
+  margin-left: 48px;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: 400;
+}
+/* блок resources*/
+.resources {
+  margin: 0;
+  margin-bottom: 217px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resources__logo-zone {
+  display: flex;
+  margin: 0;
+  width: 1100px;
+  margin-top: 80px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.resources__link {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 38px;
+}
+
 /* подвал сайта */
 .footer {
   display: flex;

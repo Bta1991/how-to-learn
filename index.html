@@ -27,7 +27,7 @@
           src="./images/header-image.png"
           alt="Изображение ученика"
         />
-        <div class="header__square-pic"></div>
+        <div class="header__square-pic rotation"></div>
       </header>
       <main class="content">
         <section class="description">
@@ -169,6 +169,7 @@
             </div>
           </article>
         </section>
+
         <section class="feynman">
           <h2 class="feynman__title">Метод Фейнмана</h2>
           <p class="feynman__subtitle">Выучить и не забыть.</p>
@@ -179,6 +180,7 @@
             alt="Изображение Фейнмана"
           />
         </section>
+
         <section class="digits">
           <h2 class="section-title">Цифры и факты</h2>
           <p class="section-subtitle">Про учёбу и мозг</p>
@@ -251,8 +253,8 @@
             </div>
           </div>
         </section>
+
         <section class="kaufman">
-          <!-- Используем повторно компоненты из секции digits-->
           <h2 class="section-title section-title_theme_dark">
             Принципы обучения
           </h2>
@@ -321,8 +323,9 @@
               </p>
             </div>
           </div>
-          <div class="kaufman__triangle"></div>
+          <div class="kaufman__triangle rotation"></div>
         </section>
+
         <section class="resources">
           <h2 class="section-title">Полезные ресурсы</h2>
           <p class="section-subtitle">Больше материалов о лайфхаках обучения</p>
@@ -361,10 +364,10 @@
           </div>
         </section>
       </main>
+
       <footer class="footer">
         <!-- 1 основной блок footer, элемент columns -->
         <div class="footer__columns">
-          <!-- 2 модификатор content со значением copyright -->
           <div class="footer__column footer__column_content_copyright">
             <img
               class="logo logo_place_footer"
@@ -373,10 +376,8 @@
             />
             <p class="footer__author">&copy; Tanya Batrachenko</p>
           </div>
-          <!-- 3 модификатор content со значением info используем БЕМ методологию навигация nav -->
           <nav class="footer__column footer__column_content_info">
             <h4 class="footer__column-heading">О Практикуме</h4>
-            <!-- ссылки -->
             <ul class="footer__column-links">
               <li>
                 <a
@@ -401,10 +402,8 @@
               </li>
             </ul>
           </nav>
-          <!-- 4  модификатор content со значением socia -->
           <nav class="footer__column footer__column_content_social">
             <h4 class="footer__column-heading">Соцсети</h4>
-            <!--здесь в ссылки добавим иконки -->
             <ul class="footer__column-links">
               <li>
                 <a class="footer__column-link" href="https://www.youtube.com/"
