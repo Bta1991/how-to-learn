@@ -28,7 +28,7 @@ a {
   }
 }
 .rotation {
-  animation: rotation 20s infinite linear ;
+  animation: rotation 20s infinite linear;
 }
 
 
@@ -396,9 +396,8 @@ margin-right: 20px;
   background-color: #f2f2f2;
 }
 .khan__container {
-  margin: 0;
-  width: 80%;
   margin: 0 auto;
+  width: 80%;
 }
 .khan__author {
   margin: 0;
