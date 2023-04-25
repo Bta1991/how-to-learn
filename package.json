@@ -5,6 +5,7 @@
   "repository": {
     "url": "git+https://github.com/bta1991/how-to-learn.git"
   },
+
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
